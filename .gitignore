@@ -1,2 +1,18 @@
+# xcode project
 proj.ios_mac/ResMgr.xcodeproj/project.xcworkspace/
 proj.ios_mac/ResMgr.xcodeproj/xcuserdata/
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
