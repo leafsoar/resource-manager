@@ -1,0 +1,53 @@
+{
+  "file_name": [
+    "CloseNormal.png", 
+    "CloseSelected.png", 
+    "file_list.json", 
+    "HelloWorld.png", 
+    "Marker Felt.ttf", 
+    "ghosts.plist", 
+    "ghosts.png", 
+    "grossini_family.plist", 
+    "grossini_family.png", 
+    "JungleLeft.png"
+  ], 
+  "texture_name": [
+    "child1.gif", 
+    "father.gif", 
+    "sister1.gif", 
+    "sister2.gif", 
+    "grossini.png", 
+    "grossinis_sister1.png", 
+    "grossinis_sister2.png"
+  ], 
+  "texture_plist": [
+    "6", 
+    "6", 
+    "6", 
+    "6", 
+    "8", 
+    "8", 
+    "8"
+  ], 
+  "texture_image": [
+    "7", 
+    "7", 
+    "7", 
+    "7", 
+    "9", 
+    "9", 
+    "9"
+  ], 
+  "file_index": [
+    "1", 
+    "2", 
+    "3", 
+    "4", 
+    "5", 
+    "6", 
+    "7", 
+    "8", 
+    "9", 
+    "10"
+  ]
+}
