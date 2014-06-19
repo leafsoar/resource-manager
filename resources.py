@@ -106,6 +106,18 @@ def generate_h():
                     # 前缀
                     ext_pre = getPreByExt(ext)
                     f.write(res_format % (ext_pre, name, image))
+        else:
+            f.write("\n// %s\n" % os.path.basename(filename))
+            # images = root[0][1].find("key")
+            for elem in root[0][1]:
+                if elem.tag == "key":
+					image = elem.text
+					name, ext = os.path.splitext(image)
+                    # 去空格
+					name = name.replace(' ', '')
+                    # 前缀
+					ext_pre = getPreByExt(ext)
+					f.write(res_format % (ext_pre, name, image))
 
     # 生成 json key 定义
     f.write("\n// json key\n")    
@@ -136,6 +148,13 @@ def generate_json():
             root = ET.parse(filename).getroot()
             if root[0][0].text == "texture":                
                 for elem in root[0][3]:
+                    if elem.tag == "key":
+                        image = elem.text
+                        texture_plist.append(str(idx + 1))
+                        texture_name.append(image)
+                        texture_image.append(str(idx + 2))
+            else:
+                for elem in root[0][1]:
                     if elem.tag == "key":
                         image = elem.text
                         texture_plist.append(str(idx + 1))
